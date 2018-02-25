@@ -8,7 +8,6 @@ import { AppService } from './shared/app.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  public title = 'Albums gallery';
   public categories: string[];
 
   constructor(private appService: AppService) {
