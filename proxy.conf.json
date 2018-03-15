@@ -1,0 +1,9 @@
+{
+  "/getSpotifyToken/*": {
+    "target": "https://accounts.spotify.com/api/token?grant_type=client_credentials",
+    "secure": false,
+    "ignorePath": true,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}
