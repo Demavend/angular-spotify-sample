@@ -7,12 +7,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AppService } from './shared/app.service';
 import { HomeComponent } from './pages/home-page/home.component';
+import { PlaylistComponent } from './pages/playlist/playlist.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    PlaylistComponent,
   ],
   imports: [
     HttpClientModule,
