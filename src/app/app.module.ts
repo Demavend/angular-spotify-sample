@@ -10,6 +10,7 @@ import { HomeComponent } from './pages/home-page/home.component';
 import { PlaylistComponent } from './pages/playlist/playlist.component';
 import { RegistrationComponent } from './pages/registration/registration.component';
 import { ReleasesComponent } from './pages/releases/releases.component';
+import { CategoriesComponent } from './pages/categories/categories.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { ReleasesComponent } from './pages/releases/releases.component';
     PlaylistComponent,
     RegistrationComponent,
     ReleasesComponent,
+    CategoriesComponent,
   ],
   imports: [
     HttpClientModule,
