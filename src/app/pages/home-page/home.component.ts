@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent  {
-  public title = 'Albums gallery';
 
   constructor() {
   }
