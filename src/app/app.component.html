@@ -1,2 +1,17 @@
-<router-outlet></router-outlet>
+<ul>
+  <li class="active"><a routerLink="/">Главная</a></li>
+  <li><a routerLink="/categories">Категории</a></li>
+  <li><a routerLink="/playlist">Плейлист</a></li>
+  <li><a routerLink="/registration">Регистрация</a></li>
+  <li><a routerLink="/releases">Релизы</a></li>
+  <li><a routerLink="/selected-categories">Выбраная категория</a></li>
+</ul>
+
+<div class="row">
+  <div class="col-xs-10 col-xs-offset-1">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+
 
