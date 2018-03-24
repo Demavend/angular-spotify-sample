@@ -9,6 +9,12 @@ import { AppService } from './shared/app.service';
 })
 export class AppComponent implements OnInit {
   public categories: string[];
+  links = [{name: 'home', title: 'home works again'},
+    {name: 'authentication', title: 'authentication works again'},
+    {name: 'categories', title: 'categories work again'},
+    {name: 'playlist', title: 'playlist works again'},
+    {name: 'releases', title: 'releases works again'},
+    {name: 'selected-categories', title: 'selected-categorie works again'}];
 
   constructor(private appService: AppService) {
   }
