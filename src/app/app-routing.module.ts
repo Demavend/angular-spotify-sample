@@ -10,12 +10,12 @@ import { SelectedCategoriesComponent } from './pages/selected-categories-page/se
 
 export const routes: Routes = [
   {path: '', component: HomeComponent, pathMatch: 'full'},
-  {path: '', component: HomeComponent},
   {path: 'categories', component: CategoriesComponent},
   {path: 'playlist', component: PlaylistComponent},
   {path: 'authentication', component: AuthenticationComponent},
   {path: 'releases', component: ReleasesComponent},
-  {path: 'selected-categories', component: SelectedCategoriesComponent}
+  {path: 'selected-categories', component: SelectedCategoriesComponent},
+  {path: '**', component: HomeComponent},
 ];
 
 @NgModule({
