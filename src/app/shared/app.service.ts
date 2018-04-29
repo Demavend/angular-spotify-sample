@@ -1,12 +1,13 @@
-import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import {EventEmitter, Injectable} from '@angular/core';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 
-import { Observable } from 'rxjs/Observable';
+import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/pluck';
 
 @Injectable()
 export class AppService {
+  private status: EventEmitter = new EventEmitter();
   private spotify: any = {
     client_id: 'f33b579ed56e468ab1615cb34c7a0476',
     cliens_secret_id: '6161ae4b22614372b437cd992d966953'
@@ -31,5 +32,9 @@ export class AppService {
     });
     return this.http.get(`https://api.spotify.com/v1/browse/categories`, {headers})
       .pluck('categories', 'items');
+  }
+
+  returnStatus() {
+    return this.status;
   }
 }

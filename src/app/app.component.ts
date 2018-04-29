@@ -1,14 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
-import { AppService } from './shared/app.service';
+import {AppService} from './shared/app.service';
 
-@Component({
+@Component ({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  public categories: string[];
   links = [{name: 'home', title: 'home works again'},
     {name: 'authentication', title: 'authentication works again'},
     {name: 'categories', title: 'categories work again'},
@@ -20,8 +19,8 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.appService.getSpotifyToken().subscribe(response => {
-      this.appService.getCategories().subscribe(categories => this.categories = categories);
+    this.appService.getSpotifyToken().subscribe (response => {
+      this.appService.returnStatus().emit ();
     });
   }
 }
